@@ -4,7 +4,7 @@ stage("Test"){
     echo "test"
 }
 
-stage("Checkout SCM"{
+stage("Checkout SCM"){
     checkout scm
 }
 
