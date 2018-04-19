@@ -4,6 +4,10 @@ stage("Test"){
     echo "test"
 }
 
+stage("Checkout SCM"{
+    checkout scm
+}
+
 stage("Promote to master"){
     if (env.BRANCH_NAME=='develop'){
         echo "I am a develop brach!"
